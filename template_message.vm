@@ -1,0 +1,8 @@
+group: ${group.id}: failed: ${group.failedAsString}
+#foreach($sg in ${group.subGroups})
+	subgroup: ${sg.id} failed: ${sg.failedAsString} - intergroup logic [${sg.logicalOperatorSubGroupAsString}] - rules logic: [${sg.logicalOperatorRulesAsString}]
+#foreach($result in ${sg.results})
+		rule: ${result.rule.id} failed: ${result.failedAsString} - ${result.message}
+#end
+#end
+
