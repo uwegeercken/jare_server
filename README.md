@@ -15,11 +15,12 @@ And you will also need the JaRE library, which can be obtained from my other rep
 
 Then run the server like this:
 
-java -cp jare0.73.jar com.datamelt.server.RuleEngineServer /home/uwe/development/quality_checks/server.properties
+java -cp jare0.79.jar com.datamelt.server.RuleEngineServer /home/uwe/development/quality_checks/server.properties
 
 If you output to a file or mongodb, add the required jar files to the classpath argument above.
 
-Once running, the server will wait for connections from clients.
+Once running, the server will wait for connections from clients. A client is implemented in a Pentaho PDI plugin, so that an ETL
+transformation can connect to the server running the ruleengine.
 
+last update: 2016-09-02
 
-last update: 2015-04-28
