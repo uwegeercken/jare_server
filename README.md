@@ -2,8 +2,7 @@
 
 This repository contains additional files to run the JaRE - Java Rule Engine in server mode.
 
-You will need a properties file which contains details about the server, port, type of output and more. Download the file here
-and edit it according to your settings.
+You will need the server.properties file which contains details about the server, port, type of output and more. Download the file here and edit it according to your settings.
 
 If you ouput to a text file, then you will need the template files as well. The server uses the Apache Velocity template engine
 to render the output. Download the Apache Velocity jar file that is required to generate the output.
@@ -22,5 +21,5 @@ If you output to a file or mongodb, add the required jar files to the classpath 
 Once running, the server will wait for connections from clients. A client is implemented in a Pentaho PDI plugin, so that an ETL
 transformation can connect to the server running the ruleengine.
 
-last update: 2016-09-02
+last update: 2017-11-14
 
